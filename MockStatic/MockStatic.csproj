@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="Encryption.cs" />
     <Compile Include="FakeManager.cs" />
+    <Compile Include="FakeSignal.cs" />
+    <Compile Include="IFakeSingnal.cs" />
     <Compile Include="Mediator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -11,14 +11,14 @@ namespace UnitTestProject
         [TestMethod]
         public void TestMethod1()
         {
-            var encryption = new Mock<IFake>();            
-            encryption.Setup(_ => _.FakeCall());
+            var encryption = new Mock<IFakeSingnal>();            
+            encryption.Setup(_ => _.FakeSignalCall());
 
 
             EncryptionMediator mediator = new EncryptionMediator(encryption.Object);            
             mediator.DecryptFile("", "");
 
-            encryption.Verify(_ => _.FakeCall(), Times.Once());
+            encryption.Verify(_ => _.FakeSignalCall(), Times.Once());
 
         }
 
@@ -26,16 +26,16 @@ namespace UnitTestProject
         [TestMethod]
         public void TestMethod2()
         {
-            var encryption = new Mock<IFake>();
-            encryption.Setup(_ => _.FakeCall());            
+            var encryption = new Mock<IFakeSingnal>();
+            encryption.Setup(_ => _.FakeSignalCall());            
 
 
 
             EncryptionMediator mediator = new EncryptionMediator(encryption.Object);
-            mediator.DecryptFile("", "");
+            //mediator.DecryptFile("", "");
             mediator.ReadBson("", "", "");
 
-            encryption.Verify(_ => _.FakeCall(), Times.Exactly(2));            
+            encryption.Verify(_ => _.FakeSignalCall(), Times.Exactly(2));            
         }
     }
 }

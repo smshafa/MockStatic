@@ -9,30 +9,31 @@ namespace MockStatic
 
     public class EncryptionMediator
     {
-        public IFake _fake;
-        public EncryptionMediator(IFake fake = null)
+        public IFakeSingnal _fake;
+        public EncryptionMediator(IFakeSingnal fake = null)
         {
             this._fake = fake;
-            if (fake != null)
-            {
-                Encryption._fake = fake;
-                Utilities._fake = fake;
-            }
+            //Encryption._fakeSignal = fake;
+            //Utilities._fakeSignal = fake;
+
+            FakeSignalManager.AddFakeSource(this._fake);
+
+            
         }
 
-        public void CleanFake()
+        public void CleanSignalFake()
         {
             _fake = null;
 
-            Encryption._fake = null;
-            Utilities._fake = null;
+            Encryption._fakeSignal = null;
+            Utilities._fakeSignal = null;
         }
 
         public void DecryptFile(string s, string k)
         {
             Encryption.Decrypt(s, k);
 
-            CleanFake();
+            CleanSignalFake();
         }
 
 
@@ -42,7 +43,7 @@ namespace MockStatic
 
             Utilities.BsonToJson(b);
 
-            CleanFake();
+            CleanSignalFake();
         }
     }
 }

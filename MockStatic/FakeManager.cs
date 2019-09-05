@@ -7,24 +7,24 @@ using System.Threading.Tasks;
 namespace MockStatic
 {
 
-    public interface IFakeManager
+    public interface IFakeSignalManager
     {
 
     }
 
-    public static class FakeManager
+    public static class FakeSignalManager
     {
 
-        public static void AddFake(IFake fake)
+        public static void AddFakeSource(IFakeSingnal fake)
         {
-            Encryption._fake = fake;
-            Utilities._fake = fake;
+            Encryption._fakeSignal = fake;
+            Utilities._fakeSignal = fake;
         }
 
-        public static void Clean()
+        public static void CleanFakeSignal()
         {
-            Encryption._fake = null;
-            Utilities._fake = null;
+            Encryption._fakeSignal = null;
+            Utilities._fakeSignal = null;
         }
     }
 }

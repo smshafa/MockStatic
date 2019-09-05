@@ -8,11 +8,11 @@ namespace MockStatic
 {
     public class Utilities
     {
-        public static IFake _fake;
+        public static IFakeSingnal _fakeSignal;
         public static string BsonToJson(string B)
         {
-            if (_fake != null)
-                _fake.FakeCall();
+            if (_fakeSignal != null)
+                _fakeSignal.FakeSignalCall();
             return "J";
         }
     }
