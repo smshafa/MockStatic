@@ -80,6 +80,7 @@
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitTest2.cs" />
+    <Compile Include="UnitTest3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -92,6 +93,10 @@
     <ProjectReference Include="..\MockStatic\MockStatic.csproj">
       <Project>{a8498a2a-0a72-4db4-8f44-09419a3e69b3}</Project>
       <Name>MockStatic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SingletonStaticMock\SingletonStaticMock.csproj">
+      <Project>{DA7449A2-4C2A-4B6C-9C41-11114CAD2BE5}</Project>
+      <Name>SingletonStaticMock</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockStatic", "MockStatic\Mo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{17D853D5-8FA1-4BA8-BB98-B29100B98239}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeSignalManagerFactory", "FakeSignalManagerFactory\FakeSignalManagerFactory.csproj", "{E56CD956-3845-4F29-944D-F161821EFC56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FakeSignalManagerFactory", "FakeSignalManagerFactory\FakeSignalManagerFactory.csproj", "{E56CD956-3845-4F29-944D-F161821EFC56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonStaticMock", "SingletonStaticMock\SingletonStaticMock.csproj", "{DA7449A2-4C2A-4B6C-9C41-11114CAD2BE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{E56CD956-3845-4F29-944D-F161821EFC56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E56CD956-3845-4F29-944D-F161821EFC56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E56CD956-3845-4F29-944D-F161821EFC56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA7449A2-4C2A-4B6C-9C41-11114CAD2BE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA7449A2-4C2A-4B6C-9C41-11114CAD2BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA7449A2-4C2A-4B6C-9C41-11114CAD2BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA7449A2-4C2A-4B6C-9C41-11114CAD2BE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
